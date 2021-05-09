@@ -28,7 +28,10 @@ jobs:
         run: chmod +x ./gradlew
     
       - name: Build with Gradle 
-        run: ./gradlew build
+        run: ./gradlew build --scan
+      
+      - name: Buildscan 
+        run: ./gradlew build 
         
       - name: Test with Gradle 
         run: ./gradlew test
