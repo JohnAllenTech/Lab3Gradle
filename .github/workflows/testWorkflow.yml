@@ -30,6 +30,12 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew build
         
+      - name: Generate Java Documents
+        run: ./gradlew javadoc
+        
+      - name: Buildscan
+        run: ./gradlew build --scan
+        
       - uses: actions/upload-artifact@v2
         with:
           name: Package
