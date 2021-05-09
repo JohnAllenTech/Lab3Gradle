@@ -18,7 +18,7 @@ public class App {
     }
 
     public int function4() {
-        return 5;
+        return 4;
     }
 
     public static void main(String[] args) {
