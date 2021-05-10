@@ -72,3 +72,8 @@ jobs:
         # Run our build using gradle
       - name: Build with Gradle
         run: ./gradlew test
+      
+      - uses: actions/upload-artifact@v2
+        with:
+          name: test-results
+          path: app/build/test-results
